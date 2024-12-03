@@ -7,10 +7,10 @@ runs:
 
 inputs:
   input_path:
-    description: '(Path) or (File) The location of the folder containing your .md or .markdown files, or a path to a single .md or .markdown file that you would like to convert.'
+    description: '/home/ray/md2pdf/' # (Path) or (File) The location of the folder containing your .md or .markdown files, or a path to a single .md or .markdown file that you would like to convert.'
     required: false
   input_dir:
-    description: '(Path) The location of the folder containing your .md or .markdown files'
+    description: '/home/ray/md2pdf/' # (Path) The location of the folder containing your .md or .markdown files'
     required: false
   images_dir:
     description: '(Path) The location of the folder containing your images, this should be the route of all images'
@@ -19,14 +19,14 @@ inputs:
     description: '(String) The path you use to import your images that can be replaced with the server URL'
     required: false
   output_dir:
-    description: '(Path) The location of the folder you want to place the built files'
+    description: '/home/ray/md2pdf/' # '(Path) The location of the folder you want to place the built files'
     required: false
   build_html:
     description: '(Boolean) Whether to also create a .html file'
     required: false
   build_pdf:
     description: '(Boolean) Whether to create a .pdf file (the intended behaviour)'
-    required: false
+    required: true
   theme:
     description: '(File) The location of the CSS file you want to use as the theme'
     required: false
